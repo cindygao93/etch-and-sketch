@@ -2,31 +2,21 @@ var num = 16;
 
 
 $(document).ready(function(){
-	  $("td").hover(function(){
-	      $(this).css("background-color", "yellow");
-	  });
 
-	  /*$("body").append('<div></div>');*/
+      var grid = document.createElement("table");
+	  grid.setAttribute("id","grid");
+	  document.body.appendChild(grid);
 
 	  generateFixedGrid();
 
-	  /*alert("i am outside loop");
-	  console.log("i am outside loop");
-
-	  for (i = 0; i < 2; i++) { 
-      	/*$(#grid).append("div#first");
-      	alert("I am inside loop")
-      	var name = prompt("what is your name?", "")
-
-	  }*/
-	  /*$("#grid")*/
-
-	  /*generateGrid();*/
+	  $("td").hover(function(){
+	  	$(this).css("background-color", "black");
+	  });
 
 });
 
 function generateFixedGrid() {
-	var grid = document.createElement("table");
+	/*var grid = document.createElement("table");
     grid.setAttribute("id","grid");
 
 
@@ -40,7 +30,7 @@ function generateFixedGrid() {
     container.setAttribute("id","grid");
 
     document.body.appendChild(container);*/
-    document.body.appendChild(grid);
+    //document.body.appendChild(grid);
 
 
 
@@ -61,11 +51,20 @@ function generateFixedGrid() {
 
 }
 
+function clearGrid(){
+
+	cells = document.getElementsByTagName('td');
+	/*console.log(cells);*/
+	for (var i=0; i<cells.length; i++){
+    	/* each item means it is a new row, therefore create a new row*/
+    	cells[i].style.backgroundColor = "white";
+    }
+}
+
 
 /*generate grid prompts the user for a number between 1 and 64. Using  
 this number which we will call n, the browser will generate a grid of nxn */
 function generateGrid() {
-	alert("hello");
 
 	/*do error checking here*/
 	num = prompt("Choose a number between 1 and 64");

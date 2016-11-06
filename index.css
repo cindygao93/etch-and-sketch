@@ -1,17 +1,17 @@
-#example{
-	width: 150px;
-	height: 150px;
-	border-style: solid;
-	border-color: green;
-	border-width: 5px;
+p{
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
 }
 
 #grid{
-	width: 300px;
-	height: 300px;
+	width: 450px;
+	height: 450px;
 	background-color: none;
 	margin: 40px auto;
-	border: 1px solid black;
+	border: 20px solid red;
 
 }
 
@@ -34,7 +34,7 @@ td {
 
 }
 
-div{
+#big {
 	background-color: orange;
 	height: 50px;
     width: 50px;
@@ -63,3 +63,21 @@ div{
     display: inline-block;
     text-align: left;
 }
+
+
+.buttons {
+
+	width: 100%
+	background-color: none;
+	height: 15px;
+	text-align: center;
+
+}
+
+/*button {
+	display: inline-block;
+    text-align: center;
+    height: 15px;
+    width: 100%;
+
+}*/
