@@ -24,7 +24,7 @@ td {
 
 }
 
-#board{
+/*#board{
 	background-color: orange;
 	height: 400px;
     width: 400px;
@@ -32,37 +32,17 @@ td {
     text-align: center;
     vertical-align: middle;
 
-}
-
-#big {
-	background-color: orange;
-	height: 50px;
-    width: 50px;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
+}*/
 
 
-.container {
+/*.container {
     width: 500px;
     height: 500px;
     margin: auto;
     background-color: red;
     border: 60px solid #DD2900;
-    /*box-shadow: 10px 10px 0px 3px #888888;*/
-}
-
-#small {
-	background-color: red;
-	height: 20px;
-    width: 20px;
-    /*position: absolute;
-    margin: 0 auto;
-    display: block;*/
-    display: inline-block;
-    text-align: left;
-}
+    /*box-shadow: 10px 10px 0px 3px #888888;
+}*/
 
 
 .buttons {
@@ -74,10 +54,3 @@ td {
 
 }
 
-/*button {
-	display: inline-block;
-    text-align: center;
-    height: 15px;
-    width: 100%;
-
-}*/

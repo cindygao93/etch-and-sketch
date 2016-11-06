@@ -1,6 +1,6 @@
 var num = 16;
 
-
+//code that is executed once the page is done loading
 $(document).ready(function(){
 
 	  generateFixedGrid();
@@ -11,6 +11,8 @@ $(document).ready(function(){
 
 });
 
+
+//this function geenrates a grid of numxnum
 function generateFixedGrid() {
 	var grid = document.createElement("table");
     grid.setAttribute("id","grid");
@@ -47,6 +49,8 @@ function generateFixedGrid() {
 
 }
 
+
+//this function clears the current grid so the user can start redrawing on a blank grid
 function clearGrid(){
 
 	cells = document.getElementsByTagName('td');
@@ -56,6 +60,10 @@ function clearGrid(){
     }
 }
 
+
+//this function lets the user draw on the grid but instead of immediately 
+//changing the cells to black when the user hovers over them, it simply changes 
+//opacity to be a darker shade until it becomes black
 function greyScaleGrid(){
 	clearGrid();
 	var cellOpacity = 0;
